@@ -6,6 +6,9 @@
     width: 100%;
     z-index: 10;
     padding: 1rem 0;
+    @media only screen and (max-width:$bp-small) {
+        justify-content: space-between;   
+     } 
 
     &__logo {
         width: 9rem;
@@ -16,6 +19,10 @@
         font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: 600;
+        @media only screen and (max-width:$bp-small) {
+            display:none;
+         } 
+    
 
         &--link {
             text-decoration: none;
@@ -46,12 +53,20 @@
             border-radius: 50%;
             transition: all .4s linear;
             margin: 0 .5rem;
+   
+         }
+
+         &--insta {
+            @media only screen and (max-width:$bp-small) {
+                margin-right:2rem;
+             } 
          }
 
          &--face:hover {
             background: #3b5998;
             border-color: transparent;
             color: #fff;
+            
          }
 
          &--insta:hover {
@@ -260,7 +275,7 @@ transition: .4s ease;
        } 
 
       &--onClick {
-       transform: scale(70);  
+       transform: scale(60);  
 
       }
      
@@ -305,7 +320,8 @@ transition: .4s ease;
       }
 
       &--icon {
-          margin: 2rem 2rem;
+          margin: 3rem 3rem;
+          font-size: 3rem;
       }
   }
 

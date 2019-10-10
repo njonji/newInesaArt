@@ -32,24 +32,18 @@
 
             @media only screen and (max-width:$bp-medium) {
               grid-row: 2 / -1;
-              grid-column: 1 / -1; 
-              width: 80%;
+              grid-column: 1 / -1;  
+              margin-top: 5rem;
             
           } 
+            @media only screen and (max-width:$bp-small-3) {
+              width: 30rem;
+           
+          } 
+            @media only screen and (max-width:$bp-small-4) {
+              margin-top: 0;          
+          } 
 
-        &--medium {
-          font-size: 3.5rem;
-          color: $color-text;
-          font-weight: 200;
-          display: none;
-          padding: 0;
-          margin: 0;
-          line-height: 3rem;
-          @media only screen and (max-width:$bp-medium) {
-            display: block;
-        } 
-          
-          }
       
        
       &--h5 {
@@ -62,12 +56,11 @@
           transform: rotate(-90deg);
           position: absolute;
           top: 2rem;
-          left: 6rem;
-
-          @media only screen and (max-width:$bp-medium) {
-            display: none;
+          left: 4rem;
+          @media only screen and (max-width:$bp-small-3) {
+            left:-1.5rem;
         } 
-    
+ 
 
   
       }
@@ -81,24 +74,22 @@
           position: absolute;
           top:-4rem;
           left:12rem;
-          @media only screen and (max-width:$bp-medium) {
-            display: none;
+          @media only screen and (max-width:$bp-small-3) {
+            left: 6rem;
         } 
-   
+ 
 
       }
 
 
       &--h2 {
-          margin: 2.4rem 0 0 5.5rem;
+          
           font-size: 3.5rem;
           font-weight: 200;
           line-height: 4rem;
           color: $color-text;
           display: inline-block;
-          @media only screen and (max-width:$bp-medium) {
-            display: none;
-        } 
+
        }
 
    }
@@ -107,6 +98,7 @@
      color: $color-text;
      grid-row: 1 / -1;
      grid-column: 1 / 2;
+     text-align: center;
 
      &--p {
         font-size: 1.5rem;
@@ -129,6 +121,14 @@
       @media only screen and (max-width:$bp-medium) {
         grid-row: 1 / 2;
         grid-column: 1 / -1; 
+      
+      } 
+      @media only screen and (max-width:$bp-small) {
+        width: 30rem;
+      
+      } 
+      @media only screen and (max-width:$bp-small-4) {
+        width: 25rem;
       
       } 
  

@@ -287,7 +287,7 @@ transition: .4s ease;
      height: 100vh;
      position: fixed;
      top: 0;
-     right: 0;
+     right: -10rem;
      z-index: 1500;
      opacity: 0;
      width: 0;
@@ -296,12 +296,13 @@ transition: .4s ease;
      &--onClick {
        opacity: 1;
        width: 100%;
+       right: 0;
      }
   }
 
   &__list {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     list-style: none;
@@ -322,15 +323,22 @@ transition: .4s ease;
       &--icon {
           margin: 3rem 3rem;
           font-size: 3rem;
+          @media only screen and (max-width:$bp-small) {
+            font-size: 2.5rem;
+            }
       }
   }
 
   &__logo {
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
      
     &--img {
         width: 15rem;
         height: auto;
+
+        @media only screen and (max-width:$bp-small) {
+           width: 12rem;
+          }
     }
   }
 
@@ -343,6 +351,10 @@ transition: .4s ease;
       text-decoration: none;
       text-transform: uppercase;
       transition: all .5s linear;
+
+      @media only screen and (max-width:$bp-small) {
+       font-size: 2rem;
+       }
 
     }
   

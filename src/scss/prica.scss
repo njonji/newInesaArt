@@ -1,0 +1,62 @@
+#prica {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prica {
+
+    position: relative;
+    overflow: hidden;
+    &__video {
+        position: fixed;
+         top: 50%;
+         left: 50%;
+         transform: translateX(-50%) translateY(-50%);
+         min-width: 100%;
+         min-height: 100%;
+         width: auto;
+         height: auto;
+         z-index: -1;
+         background: url("/assets/img/home/home.jpg") no-repeat;
+         background-size: cover;
+         
+     }
+ 
+     &__overlay {
+         background-color: rgba(0, 0, 0, .7);
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: -1;
+ 
+         @media only screen and (max-width:$bp-small) {
+             background-color: rgba(0, 0, 0, .5);
+           }
+     }
+
+     &__heading {
+         margin-bottom: -10rem;
+        color: $color-white;
+        font-size:3.4rem;
+        font-weight: 200;
+        letter-spacing: .2rem;
+        text-transform: capitalize;
+        border-bottom: 2px solid $color-primary;
+
+        &--span {
+            color: $color-primary;
+            font-weight: 600;
+        }
+     }
+}
+
+
+.information {
+    height: 100rem;
+    background: $color-white;
+}
+

@@ -17,11 +17,13 @@ const secondaryNavNavEl = document.querySelector(".navigation__nav")
 
 
 window.onscroll = function() {
-    if(window.scrollY >= 50) {
+    if(window.scrollY >= 150) {
        nav.classList.add("nodisplay") 
        whitenav.classList.remove("nodisplay")
+       whitenav.classList.add("fromTop")
     }  else {
         nav.classList.remove("nodisplay") 
+        whitenav.classList.remove("fromTop")
         whitenav.classList.add("nodisplay")
     }
 } 

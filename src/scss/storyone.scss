@@ -62,7 +62,7 @@
           transform: rotate(-90deg);
           position: absolute;
           top: 2rem;
-          left: 4rem;
+          left:4rem;
           @media only screen and (max-width:$bp-small-3) {
             left:-1.5rem;
         } 
@@ -79,9 +79,9 @@
           display: inline-block;
           position: absolute;
           top:-4rem;
-          left:12rem;
+          left:13rem;
           @media only screen and (max-width:$bp-small-3) {
-            left: 6rem;
+            left: 7rem;
         } 
  
 
@@ -123,6 +123,9 @@
 
       @media only screen and (max-width:$bp-wide-4) {
         width: 35rem;
+      } 
+      @media only screen and (max-width:$bp-wide-2) {
+        width: 32rem;
       } 
       @media only screen and (max-width:$bp-medium) {
         grid-row: 1 / 2;

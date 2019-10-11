@@ -89,18 +89,18 @@
     background: #fff;
     box-shadow: 0 .4rem .3rem 0 #999;
     transition: all .3s linear;
-    padding: 1rem 0;
+    padding: .5rem 0;
     @media only screen and (max-width:$bp-large) {
         display:none;
      } 
 
     &__logo {
-        width: 9rem;
+        width: 8rem;
         height: auto;
     }
 
     &__links {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         text-transform: uppercase;
         font-weight: 600;
 
@@ -124,14 +124,15 @@
          
          &--icon {
             border: 1px solid $color-text;
-            width: 3rem;
-            height: 3rem;
+            width: 2.5rem;
+            height: 2.5rem;
             display: inline-block;
-            line-height: 3rem;
+            line-height: 2.5rem;
             text-align: center;
             color: $color-text;
             border-radius: 50%;
             transition: all .4s linear;
+            padding:.4rem;
             margin: 0 .5rem;
          }
 
@@ -226,8 +227,12 @@ transition: .4s ease;
           } 
   
           @media only screen and (max-width:$bp-small) {
-            top: 7.7rem;
+            top: 7.4rem;
            right: 6rem;
+          
+        } 
+          @media only screen and (max-width:$bp-small-4) {
+            top: 7.2rem;
           
         } 
       
@@ -275,7 +280,7 @@ transition: .4s ease;
        } 
 
       &--onClick {
-       transform: scale(60);  
+       transform: scale(45);  
 
       }
      
@@ -302,7 +307,7 @@ transition: .4s ease;
 
   &__list {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     list-style: none;

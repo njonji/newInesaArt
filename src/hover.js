@@ -1,4 +1,4 @@
-import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
+/* import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
 import * as THREE from 'three';
 import hoverEffect from 'hover-effect';
 
@@ -9,4 +9,4 @@ new hoverEffect({
     image2:"./assets/img/home/inesa1.jpg",
     displacementImage:"./assets/img/home/heightMap.png",
     
-})
+}) */

@@ -1,0 +1,142 @@
+#footer {
+    
+    border-top: 1px solid $color-black;
+    background: $color-grey-light-1;
+}
+
+.footer {
+    padding: 5rem 8rem;
+    display: grid;
+    grid-template-rows: 1fr 10rem;
+    grid-template-columns: repeat(12, 1fr);
+
+    @media only screen and (max-width:$bp-small-2) {
+        padding: 5rem 3rem;
+    } 
+    @media only screen and (max-width:$bp-small-4) {
+        padding: 5rem 1rem;
+    } 
+
+
+    &__content {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $color-text;
+        text-align: center;
+
+       &--img {
+           width: 15rem;
+           height: auto;
+         
+       }   
+
+    }
+
+    &__links {
+   
+    text-transform: uppercase;
+    font-family:  "Montserrat", sans-serif ;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all .3s linear;
+    font-size:2rem;
+    text-decoration: none;
+
+  
+
+    &--link {
+        text-decoration: none;
+        color: $color-text;
+        margin-left: -40%;
+   
+
+        &:hover {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+    }
+    &__social {
+       font-size: 2.5rem;
+
+
+       &--link {
+           text-decoration: none;
+           color: $color-text;
+           padding:0 1rem;
+           &:hover {
+               color: $color-primary;
+         }
+       }
+    }
+
+
+    &__copyright {
+        grid-row: 2 / -1;
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-text;
+        padding-top: 2rem;
+
+        @media only screen and (max-width:$bp-medium) {
+            flex-direction: column;
+            justify-content: center;
+           } 
+        
+
+        &--mdstudio {
+            color: $color-text;
+            text-align: center;
+            font-size: 1.2rem;
+            margin:0;
+            padding: 0;
+   
+           }
+    
+           &--link {
+               text-decoration: none;
+               color: $color-text;
+               transition: all .3s ease-in-out;
+    
+               &:hover {
+                   color: $color-primary;
+               }
+           }
+      
+
+        &--text {
+            font-size: 1.2rem;
+           margin:0;
+           padding: 0;
+           @media only screen and (max-width:$bp-medium) {
+           margin-bottom: .5rem;
+           } 
+
+        }
+
+        &--maps {
+            font-size: 1.2rem;
+            @media only screen and (max-width:$bp-medium) {
+                margin-bottom: .5rem;
+                } 
+    
+            &-link {
+                text-decoration: none;
+                color: $color-text;
+                padding: 0 .5rem;
+            
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

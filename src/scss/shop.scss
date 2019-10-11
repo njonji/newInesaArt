@@ -10,8 +10,11 @@
     justify-content: center;
     padding: 0 30rem;
 
-    @media only screen and (max-width:$bp-wide-3) {
+    @media only screen and (max-width:$bp-wide-2) {
      padding: 0 20rem;
+    } 
+    @media only screen and (max-width:$bp-wide-3) {
+     padding: 0 15rem;
     } 
 
     @media only screen and (max-width:$bp-large) {

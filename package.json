@@ -32,9 +32,6 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.5.5",
-    "gsap": "^2.1.3",
-    "hover-effect": "^1.1.0",
-    "three": "^0.109.0"
+    "@babel/runtime": "^7.5.5"
   }
 }

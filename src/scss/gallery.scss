@@ -21,7 +21,10 @@
         @media only screen and (max-width:$bp-large) {
             grid-row: 1 / 2;
            grid-column: 1 / -1;
-           padding: 8rem 0;
+           
+        } 
+        @media only screen and (max-width:$bp-medium) {
+            padding-top: 10rem;
         } 
     }
     &__right {
@@ -70,7 +73,17 @@
   margin: 0 auto;
   overflow: hidden;
 
-  @media only screen and (max-width:$bp-small-2) {
+  @media only screen and (max-width:$bp-wide-1) {
+    width: 40rem;
+    min-height: 40rem;
+    max-height: 40rem;
+} 
+  @media only screen and (max-width:$bp-wide-3) {
+    width: 35rem;
+    min-height: 35rem;
+    max-height: 35rem;
+} 
+  @media only screen and (max-width:$bp-large) {
     width: 40rem;
     min-height: 40rem;
     max-height: 40rem;
@@ -104,6 +117,7 @@
     &__image {
         width: 100%;
         max-height: 10rem;
+      
         @media only screen and (max-width:$bp-small-3) {
           max-height: 7rem;
         } 

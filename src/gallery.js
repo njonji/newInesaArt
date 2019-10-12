@@ -1,4 +1,4 @@
-/* const current = document.querySelector("#current");
+const current = document.querySelector("#current");
 const imgs = document.querySelectorAll(".images__image");
 const opacity = 0.6;
 
@@ -25,4 +25,4 @@ function imgClick(e) {
    //Change opacity on clicked image
 
    e.target.style.opacity = opacity;
-} */
+}

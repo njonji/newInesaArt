@@ -12,6 +12,21 @@
 }
 
 
+@keyframes slide-in{
+    from {
+        
+        transform: translateX(100%);
+        visibility: visible;
+
+    }
+   to {
+        transform: translateX(0);
+    }
+} 
+
+.slide-in {
+    animation: slide-in 0.8s ease forwards;
+}
 @keyframes moveInTop{
     0% {
         opacity: 0;

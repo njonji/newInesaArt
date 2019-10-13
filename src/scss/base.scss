@@ -52,10 +52,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #preloader-image {
-    width: 10rem;
+    width: 20rem;
     height: auto;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -130,10 +130,10 @@ animation: line-anim 1s ease forwards .8s;
     animation: fadeOut .5s ease forwards 1.2s;
 
     &__image {
-        width: 10rem;
+        width: 20rem;
         height: auto;
         position: absolute;
-        top: 35%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;

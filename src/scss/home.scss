@@ -39,19 +39,21 @@
     &__arrow-down {
         position: absolute;
         left: 50%;
+        top: 95%;
         bottom: 2.5rem;
         color: #fff;
         font-size: 4rem;
         width:4rem;
         height: 4rem;
         text-align: center;
-        margin-left: -1.6rem;
         z-index: 1;
+        transform: translate(-50%, -50%);
     
     }
 
     &__arrow-down:hover {
         color: $color-primary;
+       
     }
 
     &__content {

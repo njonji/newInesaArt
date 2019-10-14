@@ -6,10 +6,15 @@ const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    home:'./src/home.js',
+    story:'./src/story.js',
+    gallery:'./src/galerija.js',
+    shop:'./src/shop.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
-    filename: 'bundle.js'
+    filename: '[name]bundle.js'
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),

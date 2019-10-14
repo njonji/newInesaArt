@@ -19,7 +19,7 @@
          width: auto;
          height: auto;
          z-index: -1;
-         background: url("/assets/img/story/story.jpg") no-repeat;
+         background: url("/assets/img/gallery/galerija2.jpg") no-repeat;
          background-size: cover;
          
      }
@@ -39,7 +39,7 @@
      }
 
      &__heading {
-         margin-bottom: -10rem;
+         margin-bottom: -20rem;
         color: $color-white;
         font-size:3.4rem;
         font-weight: 200;
@@ -63,7 +63,7 @@
     margin: 0 auto;
     padding: 2rem 0;
     display: grid;
-    grid-template-rows:repeat(12, max-content);
+    grid-template-rows:repeat(6, max-content);
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
@@ -76,7 +76,6 @@
     &__startingTitle {
         font-size: 1.8rem;
         color: $color-text;
-        text-transform: capitalize;
         font-weight: 400;
         border-left: 3px solid $color-primary;
         padding: 1rem;
@@ -93,9 +92,7 @@
         @media only screen and (max-width:$bp-small) {
             grid-column: 2 / 12;
             margin-left: 0;
-         
-           
-       
+
             
           }
     }
@@ -112,6 +109,7 @@
 
         @media only screen and (max-width:$bp-large) {
             flex-direction: column;
+            padding:5rem 0;
           }
     }
     &__secondRow{
@@ -124,7 +122,7 @@
         width: 100%;
         @media only screen and (max-width:$bp-large) {
             flex-direction: column-reverse;
-
+            padding:5rem 0;
           }
     }
 
@@ -139,6 +137,7 @@
         width: 100%;
         @media only screen and (max-width:$bp-large) {
             flex-direction: column;
+            padding:5rem 0;
           }
     }
     &__forthRow{
@@ -151,18 +150,18 @@
         width: 100%;
         @media only screen and (max-width:$bp-large) {
             flex-direction: column-reverse;
-
+            padding:5rem 0;
           }
     }
 
 
 
     &__title {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       color: $color-text;
       text-transform: uppercase;
       text-align: center;
-
+      margin:3rem 4rem;
 
 
       &--h2 {
@@ -190,8 +189,9 @@
 
       &--span {
           font-weight: 600;
-          font-size: 2.2rem;
+          font-size: 2.55rem;
           color: $color-primary;
+         
         
       }
 

@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #preloader-image {
-    width: 20rem;
+    width: 15rem;
     height: auto;
     position: absolute;
     top: 25%;
@@ -60,6 +60,13 @@ h1,h2,h3,h4,h5,h6 {
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: fadeIn 0.5s ease forwards 1.7s;
+
+    @media only screen and (max-width:$bp-large) {
+        width: 12rem;
+      }
+    @media only screen and (max-width:$bp-small-3) {
+        width: 10rem;
+      }
 }
 
 
@@ -69,7 +76,7 @@ height: 100%;
 margin: 0 auto;
 position: absolute;
 top: 25%;
-left: 18%;
+left: 18.5%;
 animation: fill 0.5s ease forwards 1.5s;
 
 
@@ -130,7 +137,7 @@ animation: line-anim 1s ease forwards .8s;
     animation: fadeOut .5s ease forwards 1.2s;
 
     &__image {
-        width: 20rem;
+        width: 15rem;
         height: auto;
         position: absolute;
         top: 25%;
@@ -138,6 +145,21 @@ animation: line-anim 1s ease forwards .8s;
         transform: translate(-50%, -50%);
         opacity: 0;
         animation: fadeIn 0.5s ease forwards .8s;
+
+        &--gallery {
+            left: 50.4%;
+        }
+
+        &--shop {
+            left: 48.5%;
+        }
+
+        @media only screen and (max-width:$bp-large) {
+            width: 12rem;
+          }
+        @media only screen and (max-width:$bp-small-3) {
+            width: 10rem;
+          }
     }
 
     &__story {
@@ -146,7 +168,7 @@ animation: line-anim 1s ease forwards .8s;
         margin: 0 auto;
         position: absolute;
         top: 25%;
-        left: 18%;
+        left: 19%;
         animation: fill 0.5s ease forwards .8s;
     }
 
@@ -185,4 +207,86 @@ animation: line-anim 1s ease forwards .8s;
         stroke-dashoffset: 244.9px;
         animation: line-anim 1s ease forwards;
     }
+
+
+    &__gallery {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 25%;
+        left: 18.6%;
+        animation: fill 0.5s ease forwards .8s;
+    }
+
+    &__gallery path:nth-child(1) {
+        stroke-dasharray: 363.17px;  
+        stroke-dashoffset: 363.17px;  
+        animation: line-anim 1s ease forwards;
+    }
+    &__gallery path:nth-child(2) {
+        stroke-dasharray: 245.3px;  
+        stroke-dashoffset: 245.3px; 
+        animation: line-anim 1s ease forwards;
+    }
+    &__gallery path:nth-child(3) {
+        stroke-dasharray: 162.9px;  
+        stroke-dashoffset: 162.9px;  
+        animation: line-anim 1s ease forwards;
+    }
+    &__gallery path:nth-child(4) {
+        stroke-dasharray: 162.9px;    
+        stroke-dashoffset: 162.9px;  
+        animation: line-anim 1s ease forwards;
+    }
+    &__gallery path:nth-child(5) {
+        stroke-dasharray: 228.2px;  
+        stroke-dashoffset: 228.2px;  
+        animation: line-anim 1s ease forwards;
+    }
+    &__gallery path:nth-child(6) {
+        stroke-dasharray: 163.8px;  
+        stroke-dashoffset: 163.8px;
+        animation: line-anim 1s ease forwards;
+    }
+    &__gallery path:nth-child(7) {
+        stroke-dasharray: 250.9px;  
+        stroke-dashoffset: 250.9px;
+        animation: line-anim 1s ease forwards;
+    }
+
+
+    &__shop {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 25%;
+        left: 19%;
+        animation: fill 0.5s ease forwards .8s;
+    }
+
+    &__shop path:nth-child(1) {
+        stroke-dasharray: 369.3px;  
+        stroke-dashoffset: 369.3px;    
+        animation: line-anim 1s ease forwards;
+    }
+    &__shop path:nth-child(2) {
+        stroke-dasharray: 333.7px;  
+        stroke-dashoffset: 333.7px;  
+        animation: line-anim 1s ease forwards;
+    }
+    &__shop path:nth-child(3) {
+        stroke-dasharray: 246.5px;  
+        stroke-dashoffset: 246.5px;    
+        animation: line-anim 1s ease forwards;
+    }
+    &__shop path:nth-child(4) {
+        stroke-dasharray: 344.6px;    
+        stroke-dashoffset: 344.6px;   
+        animation: line-anim 1s ease forwards;
+    }
+
+
 }
+    

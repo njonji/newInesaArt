@@ -2,25 +2,24 @@ const current = document.querySelector("#current--1");
 const current2 = document.querySelector("#current--2");
 const current3 = document.querySelector("#current--3");
 const current4 = document.querySelector("#current--4");
-const currentHome = document.querySelector("#current");
+
 const imgs = document.querySelectorAll(".images__image--1");
 const imgs2 = document.querySelectorAll(".images__image--2");
 const imgs3 = document.querySelectorAll(".images__image--3");
 const imgs4 = document.querySelectorAll(".images__image--4");
-const imgsHome = document.querySelectorAll(".images__image");
-const opacity = 0.6;
 
 
 imgs.forEach(img =>  img.addEventListener("click", imgClick));
 imgs2.forEach(img =>  img.addEventListener("click", imgClick2));
 imgs3.forEach(img =>  img.addEventListener("click", imgClick3));
 imgs4.forEach(img =>  img.addEventListener("click", imgClick4));
-imgsHome.forEach(img =>  img.addEventListener("click", imgClickHome));
 
+const opacity = 0.6;
 
 
 //Set first img opacity to active
 imgs[0].style.opacity = opacity;
+
 
 function imgClick(e) {
 
@@ -95,21 +94,14 @@ function imgClick4(e) {
 
    e.target.style.opacity = opacity;
 }
-function imgClickHome(e) {
 
-    //Reset opacity
-    imgsHome.forEach(imgHome => (imgHome.style.opacity = 1));
 
-    //Change current image with clicked
-   currentHome.src = e.target.src;
 
-    //Add fade in class
-   currentHome.classList.add("fade-in");
+/* 
+ const logost = document.querySelectorAll(".preload__shop path")
 
-    //Remove fade in class after .3s
-   setTimeout(() => currentHome.classList.remove("fade-in"),500)
-
-   //Change opacity on clicked image
-
-   e.target.style.opacity = opacity;
-}
+ for(let i = 0; i<logost.length; i++) {
+     console.log(`Ketter ${i} is ${logost[i].getTotalLength()}`)
+ }
+ 
+ */
